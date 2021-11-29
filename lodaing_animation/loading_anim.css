@@ -1,0 +1,80 @@
+body{
+  background-color: gray;
+  margin: 0px;
+  overflow: hidden;
+}
+.main{
+  	height: 100vh;
+  	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.obj{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  border-radius: 25px;
+  display:inline-block;
+}
+.a{ 
+  animation: mysec 5s linear 1s infinite;   
+}
+.b{ 
+  animation: mythird 5s linear 1s infinite;   
+}
+.c{
+  animation: myfour 5s linear 1s infinite;   
+}
+.d{
+  animation: myfive 5s linear 1s infinite;   
+}
+@keyframes mysec {
+  0% {background-color:red; right:0px; top:0px;}
+  10% {background-color:yellow; right:-55px; top:0px;}
+  20% {background-color:blue; right:-55px; top:55px;}
+  30% {background-color:white; right:0px; top:55px;}
+  40% {background-color:red; right:0px; top:0px;}
+  50% {background-color:yellow; right:55px; top:-55px;}
+  60% {background-color:blue; right:-128px; top:-55px; box-shadow: 20px 20px 20px black;}
+  70% {background-color:white; right:-128px; top:110px;}
+  80% {background-color:black; right:0px; top:110px;}
+  90% {background-color:red; right:0px; top:0px; box-shadow: 50px 50px 50px white;}
+}
+@keyframes mythird { 
+  0% {background-color:red; right:0px; top:0px;}
+  10% {background-color:yellow; right:0px; top:55px;}
+  20% {background-color:blue; right:55px; top:55px;}
+  30% {background-color:white; right:55px; top:0px;}
+  40% {background-color:red; right:0px; top:0px;}
+  50% {background-color:yellow; right:-55px; top:-55px;}
+  60% {background-color:blue; right: -55px; top:110px; box-shadow: 20px 20px 20px black;}
+  70% {background-color:white; right:128px; top:110px;}
+  80% {background-color:black; right:128px; top:0px;}
+  90% {background-color:red; right:0px; top:0px; box-shadow: 50px 50px 50px white;}
+}
+@keyframes myfour { 
+  0% {background-color:red; right:0px; top:0px;}
+  10% {background-color:yellow; right:0px; top:-55px;}
+  20% {background-color:blue; right:-55px; top:-55px;}
+  30% {background-color:white; right:-55px; top:0px;}
+  40% {background-color:red; right:0px; top:0px;}
+  50% {background-color:yellow; right:55px; top:55px;}
+  60% {background-color:blue; right:55px; top:-110px; box-shadow: 20px 20px 20px black;}
+  70% {background-color:white; right:-128px; top:-110px;}
+  80% {background-color:black; right:-128px; top:0px;}
+  90% {background-color:red; right:0px; top:0px; box-shadow: 50px 50px 50px white;}
+}
+@keyframes myfive {
+  0% {background-color:red; right:0px; top:0px;}
+  10% {background-color:yellow; right:55px; top:0px;}
+  20% {background-color:blue; right:55px; top:-55px;}
+  30% {background-color:white; right:0px; top:-55px;}
+  40% {background-color:red; right:0px; top:0px;}
+  50% {background-color:yellow; right:-55px; top:55px;}
+  60% {background-color:blue; right:128px; top:55px; box-shadow: 20px 20px 20px black;}
+  70% {background-color:white; right:128px; top:-110px;}
+  80% {background-color:black; right:0px; top:-110px;}
+  90% {background-color:red; right:0px; top:0px; box-shadow: 50px 50px 50px white;}
+}

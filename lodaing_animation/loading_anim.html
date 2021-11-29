@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+		 	 	$(".rect").click(function(){
+		 	 		$(".obj").css("border-radius", "0px");
+		 	 		$(".rect").hide();
+		 	 		$(".circle").show();
+				});
+		 	 	$(".circle").hide();
+		 	 	$(".circle").click(function(){
+		 	 		$(".obj").css("border-radius", "25px");
+		 	 		$(".circle").hide();		
+		 	 		$(".rect").show(); 	 		
+				});
+		 	 });
+		</script>
+	  	<link rel="stylesheet" type="text/css" href="loading_anim.css">
+	</head>
+	<body>
+		<button class="circle">rect</button>
+		<button class="rect">circle</button>	
+		<div class="main">
+			<div>
+				<div class="obj a"></div>
+				<div class="obj b"></div>
+			</div>				
+ 			<div>
+ 				<div class="obj c"></div>
+				<div class="obj d"></div>
+			</div>
+		</div>
+	</body>
+</html>
